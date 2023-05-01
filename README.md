@@ -16,7 +16,7 @@ npx @xmufaro/create-discordjs-bot
 clientToken= Your Discord Bot Token
 ```
 `config.json`
-```json
+```jsonc
 {
     "guildId": "", // Your Guild ID (OPTIONAL, only needed for guild specific slash commands)
     "prefix": "!",
@@ -49,7 +49,8 @@ pnpm start # Production
 ## Slash Commands
 ```ts
 import { Command } from '@handlers';
-import { ApplicationCommandOptionType, ApplicationCommandType } from 'discord.js';
+import { ButtonActionRowBuilder } from "@structures/ActionRowBuilder"
+import { ApplicationCommandOptionType, ApplicationCommandType, ButtonBuilder, ButtonStyle } from 'discord.js';
 
 export default new Command({
     name: 'example',
