@@ -25,7 +25,7 @@
   "homepage": "https://github.com/xMufaro/djs-template#readme",
   "dependencies": {
     "axios": "^1.4.0",
-    "discord.js": "^14.9.0",
+    "discord.js": "^14.10.0",
     "dotenv": "^16.0.3",
     "filesize": "^10.0.6",
     "fs": "^0.0.1-security",
