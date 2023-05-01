@@ -5,6 +5,10 @@ git clone https://github.com/xMufaro/discordjs-typescript-handler discord-bot
 cd discord-bot
 pnpm install
 ```
+Or use the [CLI](https://github.com/xmufaro/create-discordjs-bot)
+```
+npx @xmufaro/create-discordjs-bot
+```
 
 ### Configure
 `.env`
