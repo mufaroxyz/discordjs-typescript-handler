@@ -1,0 +1,12 @@
+{
+    "guildId": "",
+    "prefix": "!",
+    "features": {
+        "commands": true,
+        "messageCommands": true,
+        "buttons": true,
+        "selectMenus": true,
+        "modals": true        
+    }
+}
+
