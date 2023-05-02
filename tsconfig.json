@@ -1,26 +1,15 @@
 {
     "compilerOptions": {
         "target": "ESNext",
-        "module": "CommonJS",
-        "lib": ["ESNext"],
-        "declaration": true,
-        "sourceMap": true,
-        "outDir": "./dist",
+        "module": "commonjs",
+        "lib": ["esnext"],
         "strict": false,
-        "moduleResolution": "node",
         "esModuleInterop": true,
-        "experimentalDecorators": true,
-        "emitDecoratorMetadata": true,
-        "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true,
         "resolveJsonModule": true,
-        "baseUrl": ".",
-        "paths": {
-            "@client": ["./src/index"],
-            "@/*": ["./src/*"],
-            "@handlers": ["./src/extensions/handlers"],
-            "@config": ["./config.json"]
-        }
+        "outDir": "./build",
+        "sourceMap": true,
+        "incremental": true
     },
-    "exclude": ["dist", "node_modules", "tests"]
+    "exclude": ["build", "node_modules", "tests", "**/*.spec.ts"],
+    "include": ["./src/**/*.ts"]
 }

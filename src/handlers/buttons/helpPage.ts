@@ -1,4 +1,4 @@
-import { Button } from '@handlers';
+import { Button } from '../handlers';
 import { EmbedBuilder } from 'discord.js';
 
 export default new Button({

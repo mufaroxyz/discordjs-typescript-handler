@@ -1,4 +1,4 @@
-import { Command } from '@handlers';
+import { Command } from '../../handlers';
 import { ApplicationCommandType, EmbedBuilder } from 'discord.js';
 
 export default new Command({

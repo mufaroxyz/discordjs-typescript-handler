@@ -1,12 +1,11 @@
 {
-    "guildId": "",
-    "prefix": "!",
-    "features": {
-        "commands": true,
-        "messageCommands": true,
-        "buttons": true,
-        "selectMenus": true,
-        "modals": true        
-    }
+  "guildId": "1079125191621365842",
+  "prefix": "!",
+  "features": {
+    "commands": true,
+    "messageCommands": true,
+    "buttons": true,
+    "selectMenus": true,
+    "modals": true
+  }
 }
-

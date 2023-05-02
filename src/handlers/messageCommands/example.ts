@@ -1,4 +1,4 @@
-import { MessageCommand } from '@/extensions/handlers';
+import { MessageCommand } from '../handlers';
 
 export default new MessageCommand({
     name: 'example',

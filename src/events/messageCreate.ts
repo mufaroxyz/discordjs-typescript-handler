@@ -1,12 +1,11 @@
-import { Event } from '@/extensions';
-import client from '@client';
-import config from '@config';
+import { Event } from '../extensions';
+import client from '..';
 
 export default new Event('messageCreate', async message => {
     if (message.author.bot) return;
     if (!message.guild) return;
 
-    const prefix = config.prefix;
+    const prefix = client.config.prefix;
     if (!message.content.startsWith(prefix)) return;
 
     const args = message.content.slice(prefix.length).trim().split(/ +/g);

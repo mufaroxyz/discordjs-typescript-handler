@@ -1,5 +1,5 @@
-import { ButtonActionRowBuilder } from '@/structures/ActionRowBuilder';
-import { CustomClient } from '@/extensions/customClient';
+import { ButtonActionRowBuilder } from '../structures/ActionRowBuilder';
+import { CustomClient } from '../extensions/customClient';
 import { ButtonBuilder, ButtonStyle } from 'discord.js';
 
 interface CommandData {

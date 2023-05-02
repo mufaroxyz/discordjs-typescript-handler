@@ -20,7 +20,7 @@ import {
 } from '../constants/interactions';
 import { HelpService } from '../services';
 import { Logger } from '../services/logger';
-import config from '@config';
+import config from '../../config.json';
 
 const globPromisify = promisify(glob);
 
@@ -31,6 +31,7 @@ export class CustomClient extends Client {
     modals: Collection<string, ModalType> = new Collection();
     messageCommands: Collection<string, MessageCommandType> = new Collection();
     helpService = new HelpService(this, 5);
+    config = config;
 
     constructor() {
         super({
@@ -105,7 +106,7 @@ export class CustomClient extends Client {
                 guildId: config.guildId,
             });
             this.helpService.syncPagesLocally();
-            Logger.info(`Logged in as ${this.user.tag}`);
+            Logger.info(`Logged in as ${this.user?.tag}`);
         });
     }
 }

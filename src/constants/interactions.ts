@@ -15,7 +15,7 @@ import {
     UserApplicationCommandData,
 } from 'discord.js';
 
-import { CustomClient } from '@/extensions';
+import { CustomClient } from '../extensions';
 
 // Application command handler
 

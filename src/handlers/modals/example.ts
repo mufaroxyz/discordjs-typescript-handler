@@ -1,4 +1,4 @@
-import { Modal } from '@handlers';
+import { Modal } from '../handlers';
 
 export default new Modal({
     custom_id: 'example',

@@ -1,4 +1,4 @@
-import { SelectMenu } from '@handlers';
+import { SelectMenu } from '../handlers';
 
 export default new SelectMenu({
     custom_id: 'test',

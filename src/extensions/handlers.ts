@@ -4,7 +4,7 @@ import {
     ModalType,
     SelectMenuType,
     MessageCommandType,
-} from '@/constants/interactions';
+} from '../constants/interactions';
 
 export class SelectMenu {
     constructor(selectMenuOptions: SelectMenuType) {

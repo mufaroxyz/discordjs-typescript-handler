@@ -8,7 +8,7 @@ import {
 
 import { ExtendedButtonInteraction, ExtendedInteraction } from '../constants/interactions';
 import { Event } from '../extensions/event';
-import client from '@client';
+import client from '..';
 
 export default new Event('interactionCreate', async interaction => {
     if (interaction.isCommand()) {

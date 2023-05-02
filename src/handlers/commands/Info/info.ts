@@ -1,11 +1,11 @@
-import { Command } from '@handlers';
+import { Command } from '../../handlers';
 import Discord, { ApplicationCommandType, EmbedBuilder } from 'discord.js';
 import os from 'node:os';
 import typescript from 'typescript';
 
 import { FormatUtils } from '../../../utils/formatUtils';
 
-import TSConfig from '@/../tsconfig.json';
+import TSConfig from '../../../../tsconfig.json';
 
 export default new Command({
     name: 'info',
