@@ -48,8 +48,8 @@ pnpm start # Production
 # ❓ **Usage (Examples)**
 ## Slash Commands
 ```ts
-import { Command } from '@handlers';
-import { ButtonActionRowBuilder } from "@structures/ActionRowBuilder"
+import { Command } from '../../handlers';
+import { ButtonActionRowBuilder } from "../../../structures/ActionRowBuilder"
 import { ApplicationCommandOptionType, ApplicationCommandType, ButtonBuilder, ButtonStyle } from 'discord.js';
 
 export default new Command({
@@ -80,7 +80,7 @@ export default new Command({
 
 ## Buttons
 ```ts
-import { Button } from '@handlers';
+import { Button } from '../handlers';
 
 export default new Button({
     custom_id: 'example', // You can transfer basic data through ids seperating it by '-' (example-1-2-3), first element is always the id the handler will be looking for, in that case, when a button with id 'example' is pressed, the handler will run the function below
